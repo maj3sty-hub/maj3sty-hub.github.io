@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Capstone Portfolio — Francis Mahinda Munyiri</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- SimpleLightbox CSS for gallery -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css" rel="stylesheet">
+
+  <!-- Optional icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bg-hero text-white py-5">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-md-8">
+          <h1 class="display-6 fw-bold mb-1">Francis Mahinda Munyiri</h1>
+          <p class="mb-1">Registration: C027-01-1039/2022</p>
+          <p class="lead mb-3">Capstone Portfolio — final-year collection of my résumé, essay, presentations, videos and photographic essay.</p>
+          <div class="d-flex gap-2">
+            <a class="btn btn-primary btn-lg" href="#essay">Read Essay</a>
+            <a class="btn btn-outline-light btn-lg" href="#videos">Watch Videos</a>
+            <a class="btn btn-outline-light btn-lg" href="#photos">View Photos</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-md-end d-none d-md-block">
+          <img src="/evidence/github.png" alt="Profile screenshot" class="rounded shadow-sm img-fluid" style="max-height:120px;">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#">Capstone Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="#resumes">Resumes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#essay">Essay</a></li>
+          <li class="nav-item"><a class="nav-link" href="#presentations">Presentations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#photos">Photos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evidence">Evidence</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <!-- Deliverable cards -->
+    <section id="deliverables" class="mb-5">
+      <h2 class="mb-4">Deliverables</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        <div class="col">
+          <div class="card h-100 deliverable-card">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fa-solid fa-file-lines fa-2x text-primary me-3"></i>
+                <div>
+                  <h5 class="card-title mb-0">Resumes</h5>
+                  <small class="text-muted">Kiswahili • English • Kikuyu</small>
+                </div>
+              </div>
+              <p class="card-text">Three up-to-date resumes. Upload to <code>/resumes</code> as resume-en.pdf, resume-sw.pdf, resume-ki.pdf.</p>
+              <a href="#resumes" class="mt-auto btn btn-outline-primary">Open Resumes</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 deliverable-card">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fa-solid fa-book-open fa-2x text-success me-3"></i>
+                <div>
+                  <h5 class="card-title mb-0">Autobiographical Essay</h5>
+                  <small class="text-muted">20–30 pages (PDF)</small>
+                </div>
+              </div>
+              <p class="card-text">Upload /essays/autobiography.pdf (with TOC and page numbers). It will be embedded for online reading.</p>
+              <a href="#essay" class="mt-auto btn btn-outline-success">Open Essay</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 deliverable-card">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fa-solid fa-display fa-2x text-warning me-3"></i>
+                <div>
+                  <h5 class="card-title mb-0">Presentations</h5>
+                  <small class="text-muted">Autobiography • Innovation • Culture</small>
+                </div>
+              </div>
+              <p class="card-text">Upload slides as PDFs to <code>/presentations</code>. They will be previewed in the site.</p>
+              <a href="#presentations" class="mt-auto btn btn-outline-warning">View Slides</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 deliverable-card">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fa-solid fa-video fa-2x text-danger me-3"></i>
+                <div>
+                  <h5 class="card-title mb-0">Innovation / Invention Video</h5>
+                  <small class="text-muted">20 minutes + multilingual abstracts</small>
+                </div>
+              </div>
+              <p class="card-text">Upload video to YouTube (unlisted) and put abstracts into <code>/videos/innovation/</code> as abstract-en.txt, abstract-sw.txt, abstract-ki.txt.</p>
+              <a href="#videos" class="mt-auto btn btn-outline-danger">Watch Video</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 deliverable-card">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fa-solid fa-landmark fa-2x text-info me-3"></i>
+                <div>
+                  <h5 class="card-title mb-0">African Culture Video</h5>
+                  <small class="text-muted">20 minutes + multilingual abstracts</small>
+                </div>
+              </div>
+              <p class="card-text">Upload video to YouTube (unlisted) and add abstracts to <code>/videos/culture/</code>.</p>
+              <a href="#videos" class="mt-auto btn btn-outline-info">Watch Video</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 deliverable-card">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fa-solid fa-hands-holding-circle fa-2x text-secondary me-3"></i>
+                <div>
+                  <h5 class="card-title mb-0">Modern Challenge Video</h5>
+                  <small class="text-muted">20 minutes + multilingual abstracts</small>
+                </div>
+              </div>
+              <p class="card-text">Upload the video to YouTube and place abstracts in <code>/videos/challenge/</code>.</p>
+              <a href="#videos" class="mt-auto btn btn-outline-secondary">Watch Video</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 deliverable-card">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fa-solid fa-camera-retro fa-2x text-purple me-3"></i>
+                <div>
+                  <h5 class="card-title mb-0">Photographic Essay</h5>
+                  <small class="text-muted">10–20 photos + captions</small>
+                </div>
+              </div>
+              <p class="card-text">Upload images to <code>/photos</code> named photo01.jpg ... and add captions.md.</p>
+              <a href="#photos" class="mt-auto btn btn-outline-dark">View Photos</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 deliverable-card">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fa-solid fa-user-check fa-2x text-success me-3"></i>
+                <div>
+                  <h5 class="card-title mb-0">Professional Presence</h5>
+                  <small class="text-muted">5 platforms — links & screenshots</small>
+                </div>
+              </div>
+              <p class="card-text">Add evidence screenshots to <code>/evidence</code> and live links on this page.</p>
+              <a href="#evidence" class="mt-auto btn btn-outline-success">View Evidence</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Essay section -->
+    <section id="essay" class="mb-5">
+      <h2>Autobiographical Essay</h2>
+      <p class="text-muted">20–30 pages. Upload to <code>/essays/autobiography.pdf</code>.</p>
+      <div class="ratio ratio-16x9 mb-3">
+        <iframe src="/essays/autobiography.pdf" title="Autobiography PDF"></iframe>
+      </div>
+      <a class="btn btn-primary" href="/essays/autobiography.pdf" target="_blank"><i class="fa-solid fa-download me-2"></i>Download Essay (PDF)</a>
+    </section>
+
+    <!-- Presentations -->
+    <section id="presentations" class="mb-5">
+      <h2>Presentations</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5>Autobiography Slides</h5>
+              <p class="mb-2 text-muted">8–12 slides summarizing the essay</p>
+              <a class="btn btn-outline-primary" href="/presentations/autobiography-slides.pdf" target="_blank">Open Slides</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5>Innovation Slides</h5>
+              <p class="mb-2 text-muted">Summary of the innovation/invention</p>
+              <a class="btn btn-outline-primary" href="/presentations/innovation-slides.pdf" target="_blank">Open Slides</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5>Culture Slides</h5>
+              <p class="mb-2 text-muted">Cultural aspect and relevance to your specialization</p>
+              <a class="btn btn-outline-primary" href="/presentations/culture-slides.pdf" target="_blank">Open Slides</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos -->
+    <section id="videos" class="mb-5">
+      <h2>Videos</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-3 h-100">
+            <h5>Innovation / Invention</h5>
+            <p class="text-muted">Abstracts stored at /videos/innovation/*.txt</p>
+            <!-- Replace VIDEO_ID_INNOVATION with your YouTube video id -->
+            <div class="ratio ratio-16x9 mb-3">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_INNOVATION" title="Innovation Video" allowfullscreen></iframe>
+            </div>
+            <a href="/videos/innovation/abstract-en.txt" class="me-2">EN</a>
+            <a href="/videos/innovation/abstract-sw.txt" class="me-2">SW</a>
+            <a href="/videos/innovation/abstract-ki.txt">KI</a>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card p-3 h-100">
+            <h5>African Culture</h5>
+            <p class="text-muted">Abstracts at /videos/culture/*.txt</p>
+            <!-- Replace VIDEO_ID_CULTURE with your YouTube video id -->
+            <div class="ratio ratio-16x9 mb-3">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_CULTURE" title="Culture Video" allowfullscreen></iframe>
+            </div>
+            <a href="/videos/culture/abstract-en.txt" class="me-2">EN</a>
+            <a href="/videos/culture/abstract-sw.txt" class="me-2">SW</a>
+            <a href="/videos/culture/abstract-ki.txt">KI</a>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card p-3 h-100">
+            <h5>Modern Challenge</h5>
+            <p class="text-muted">Abstracts at /videos/challenge/*.txt</p>
+            <!-- Replace VIDEO_ID_CHALLENGE with your YouTube video id -->
+            <div class="ratio ratio-16x9 mb-3">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_CHALLENGE" title="Challenge Video" allowfullscreen></iframe>
+            </div>
+            <a href="/videos/challenge/abstract-en.txt" class="me-2">EN</a>
+            <a href="/videos/challenge/abstract-sw.txt" class="me-2">SW</a>
+            <a href="/videos/challenge/abstract-ki.txt">KI</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo gallery -->
+    <section id="photos" class="mb-5">
+      <h2>Photographic Essay</h2>
+      <p class="text-muted">Upload images to <code>/photos/photo01.jpg</code> ... <code>/photos/photo20.jpg</code>. Click to enlarge.</p>
+
+      <div class="gallery-grid mt-3">
+        <!-- Example thumbnails. Upload your photos and keep these filenames or update links -->
+        <div class="row g-2">
+          <div class="col-6 col-md-3">
+            <a href="/photos/photo01.jpg" class="gallery-item"><img src="/photos/photo01.jpg" alt="Photo 1 — caption goes here" class="img-thumbnail"></a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="/photos/photo02.jpg" class="gallery-item"><img src="/photos/photo02.jpg" alt="Photo 2 — caption goes here" class="img-thumbnail"></a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="/photos/photo03.jpg" class="gallery-item"><img src="/photos/photo03.jpg" alt="Photo 3 — caption goes here" class="img-thumbnail"></a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="/photos/photo04.jpg" class="gallery-item"><img src="/photos/photo04.jpg" alt="Photo 4 — caption goes here" class="img-thumbnail"></a>
+          </div>
+          <!-- Add up to photo20.jpg -->
+        </div>
+      </div>
+
+      <div class="mt-3">
+        <a class="btn btn-outline-primary" href="/photos/photographic-essay.zip" target="_blank"><i class="fa-solid fa-download me-2"></i>Download ZIP</a>
+      </div>
+    </section>
+
+    <!-- Evidence -->
+    <section id="evidence" class="mb-5">
+      <h2>Professional Online Presence</h2>
+      <p class="text-muted">Provide screenshots & links in <code>/evidence</code>.</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn profile</a> — screenshot: <a href="/evidence/linkedin.png">linkedin.png</a></li>
+        <li><a href="https://github.com/maj3sty-hub" target="_blank">GitHub profile</a> — screenshot: <a href="/evidence/github.png">github.png</a></li>
+        <li><a href="https://yourblog.example" target="_blank">Blog/Vlog</a> — screenshot: <a href="/evidence/blog.png">blog.png</a></li>
+        <li><a href="https://www.youtube.com/channel/YOUR-CHANNEL" target="_blank">YouTube channel</a></li>
+        <li>Other professional platform — screenshot: <a href="/evidence/other.png">other.png</a></li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-5">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a> (replace with your email)</p>
+    </section>
+
+  </main>
+
+  <footer class="py-4 bg-white border-top">
+    <div class="container text-center text-muted">
+      &copy; 2026 Francis Mahinda Munyiri — Capstone Portfolio
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- SimpleLightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"></script>
+
+  <!-- Initialization script -->
+  <script>
+    // Initialize SimpleLightbox for gallery links
+    (function () {
+      const gallery = new SimpleLightbox('.gallery-grid a', {
+        captions: true,
+        captionsData: 'alt',
+        captionDelay: 200,
+        nav: true
+      });
+    })();
+  </script>
+
+  <!-- NOTES:
+       - Replace VIDEO_ID_... placeholders with your YouTube IDs.
+       - Upload your PDFs, images, and screenshots into the folders referenced.
+       - For best results, optimize images (compress) before upload.
+       - If you want a "Download All" submission zip, upload it to /submission.zip and update any links.
+  -->
+</body>
+</html>
